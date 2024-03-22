@@ -1,0 +1,10 @@
+<%= form_error_notification(category) %>
+<%= form_with model: category, class: "flex justify-between border rounded-md p-4 shadow items-center my-2 font-medium bg-white" do |form| %>
+  <div class="w-full">
+    <%= form.text_field :name, required: true, autofocus: true, placeholder: "Name of your Category", class: "border w-11/12 p-1" %>
+  </div>
+  <div class="flex justify-between gap-2">
+    <%= link_to "Cancel", categories_path, class: "bg-red-500 text-white py-1 px-3 rounded" %>
+    <%= form.submit class: "bg-green-500 text-white py-1 px-3 rounded" %>
+  </div>
+<% end %>

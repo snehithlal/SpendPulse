@@ -1,0 +1,15 @@
+<%= turbo_frame_tag category do %>
+  <div class="flex justify-between border rounded-md p-4 shadow items-center my-2 font-medium bg-white">
+    <div class="text-blue-500"><%= category.name %></div>
+    <div class="flex justify-between gap-2">
+      <%= button_to "Delete",
+                  category_path(category),
+                  method: :delete,
+                  form: { data: { turbo_frame: "_top" } },
+                  class: "bg-red-600 text-white py-1 px-3 rounded" %>
+      <%= link_to "Edit",
+                  edit_category_path(category),
+                  class: "bg-blue-500 text-white py-1 px-3 rounded" %>
+    </div>
+  </div>
+<% end %>

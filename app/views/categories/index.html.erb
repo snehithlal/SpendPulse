@@ -1,3 +1,13 @@
-  <h1 class="text-3xl font-bold underline">
-    Categories
-  </h1>
+<main class="flex justify-between items-center mb-10">
+  <h1 class="text-4xl font-bold py-4">Categories</h1>
+  <%= button_to "+ New Category",
+                new_category_path,
+                method: :get,
+                class: "bg-green-500 py-2 px-4 rounded-md text-white shadow",
+                data: { turbo_frame: dom_id(Category.new) } %>
+</main>
+
+<%= turbo_frame_tag Category.new %>
+<%= turbo_frame_tag "categories" do %>
+  <%= render @categories %>
+<% end %>
