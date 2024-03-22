@@ -14,7 +14,7 @@ class Ui::ListItemComponent < ViewComponent::Base
     "<i class='#{icon_classes.join(' ')}'></i>".html_safe
   end
 
-  def list_classes
+  def item_classes
     active ? "bg-gray-800 text-white" : "hover:bg-gray-400 hover:text-white"
   end
 end
