@@ -1,0 +1,6 @@
+<ul class="p-5 cursor-pointer flex flex-col gap-2">
+  <%= render Ui::ListItemComponent.new(name: "Dashboard", path: "#", active: true, icon_classes: ["bi", "bi-command"]) %>
+  <%= render Ui::ListItemComponent.new(name: "Categories", path: "#", active: false, icon_classes: ["bi", "bi-list"]) %>
+  <%= render Ui::ListItemComponent.new(name: "Reports", path: "#", active: false, icon_classes: ["bi", "bi-bar-chart-fill"]) %>
+  <%= render Ui::ListItemComponent.new(name: "Profile", path: "#", active: false, icon_classes: ["bi", "bi-person"]) %>
+</ul>

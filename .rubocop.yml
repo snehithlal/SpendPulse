@@ -50,6 +50,9 @@ Lint/UselessAccessModifier:
 Style/AccessModifierDeclarations:
   Enabled: true
 
+Style/ClassAndModuleChildren:
+  Enabled: false
+
 # # bad
 # class Plumbus
 # private
@@ -206,6 +209,9 @@ Lint/ParenthesesAsGroupedExpression:
 # when a boolean operator, && or ||, is chained along with this method/argument
 Lint/RequireParentheses:
   Enabled: true
+
+Lint/MissingSuper:
+  Enabled: false
 
 # avoid redundant `return` expressions
 Style/RedundantReturn:
