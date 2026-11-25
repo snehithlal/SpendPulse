@@ -1,0 +1,6 @@
+project_id = "spendpulse"
+
+[functions.integrations]
+verify_jwt = false
+# The function verifies Supabase JWTs with auth.getUser(). Google's redirect uses
+# a separate single-use state check and never receives access to ledger data.
